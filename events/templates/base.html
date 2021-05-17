@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klerpis</title>
+    <link rel="stylesheet" href="{% static 'website/boobycool.css' %}">
+    <script src="{% static 'website/strip.js' %}" defer async></script>
+    <link rel="icon" href="{% static 'website/dd.ico' %}" sizes="24x24">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="./">
+                    <li>Crack</li>
+                </a>
+                <a href="">
+                    <li>Voss</li>
+                </a>
+                <a href="">
+                    <li>FLy</li>
+                </a>
+                <a href="">
+                    <li>Crazy</li>
+                </a>
+                <a href="">
+                    <li>Coco</li>
+                </a>
+                <a href="">
+                    <li>Flerpis</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="nav">
+            <!-- <span class="icon">&#10953</span> -->
+            <span class="icon">&#10540</span>
+            <h1 class="home">
+                <a href="{% url 'home' %}">Klerpis</a>
+            </h1>
+            <!-- <h1 class="home">Home</a></h1> -->
+            <!-- <span class="icon">&#10155</span> -->
+            <!-- <span class="icon">&#10525</span> -->
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <!-- <footer>
+        <ul>
+            <li>Crack</li>
+            <li>discord</li>
+            <li>ig</li>
+            <li>facebook</li>
+            <li>Web</li>
+        </ul>
+    </footer>
+    <script src="{% static 'website/crack.js' %}"></script> -->
+
+</body>
+
+</html>

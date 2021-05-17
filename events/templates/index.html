@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section class="sec-a">
+    <button class="header list-display">List</button>
+    <h1 class="header">Feel The Future</h1>
+    <!-- <h1 class="header">In Klerpis</h1> -->
+    <h3 class="fly">Fly The World</h3>
+    <section class="sec-a coming-soon">
+        <h3 class="header">We are opening soon</h3>
+
+        <div class="display">
+            <div class="container-hour">
+                <!-- <h3 class="day"></h3> -->
+                <h3 class="time day"></h3>
+                <h3>Day(s)</h3>
+            </div>
+            <div class="container-hour">
+                <!-- <h3 class=""></h3> -->
+                <h3 class="time hour"></h3>
+                <h3>Hour(s)</h3>
+            </div>
+            <div class="container-minute">
+                <!-- <h3 class=""></h3> -->
+                <h3 class="time minute"></h3>
+                <h3>Minute(s)</h3>
+            </div>
+            <div class="container-second">
+                <!-- <h3 class=""></h3> -->
+                <h3 class="time second"></h3>
+                <h3>Second(s)</h3>
+            </div>
+        </div>
+        <img class="not" src="{% static 'website/img/huey.jpg' %}" alt="cool blue" height="400px">
+    </section>
+    <!-- <h4 class="africa">Africa</h4> -->
+    <div class="con">
+
+        {% for items in my_events %}
+
+        <div class="cart">
+            <a href="{% url 'event-list' %}">
+                <img class="imog" src="{% static 'website/img/huu.png' %}" alt="desert" width="200" height="70">
+                <h2 class="title">{{ items }}</h2>
+            </a>
+            <div class="des">
+                <p>{{ items.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="cart">
+            <img class="imog" src="{% static 'website/img/dream.jpg' %}" alt="desert" width="200" height="200">
+            <h2 class="title">Crack</h2>
+            <div class="des">
+                <p>Lorem cacarot, dolor sit amet dekiquesi adipisicing elit. Ad dignissimos doloribus quo quidem
+                    esse, et smoke omnis iusto.</p>
+            </div>
+        </div>
+        <div class="cart">
+            <img class="imog" src="{% static 'website/img/cool_blue.jpg' %}" alt="desert" width="200" height="200">
+            <h2 class="title">Klerpis</h2>
+            <div class="des">
+                <p>Lorem cacarot, dolor sit amet dekiquesi adipisicing elit. Ad dignissimos doloribus quo quidem
+                    esse, et smoke omnis iusto.</p>
+            </div>
+        </div>
+        <div class="cart">
+            <img class="imog" src="{% static 'website/img/redtree.jpg' %}" alt="desert" width="200" height="200">
+            <h2 class="title">Dodo</h2>
+            <div class="des">
+                <p>Lorem cacarot, dolor sit amet dekiquesi adipisicing elit. Ad dignissimos doloribus quo quidem
+                    esse, et smoke omnis iusto.</p>
+            </div>
+        </div>
+        <div class="cart">
+            <img class="imog" src="{% static 'website/img/l_phone.jpg' %}" alt="desert" width="200" height="200">
+            <h2 class="title">Goro</h2>
+            <div class="des">
+                <p>Lorem cacarot, dolor sit amet dekiquesi adipisicing elit. Ad dignissimos doloribus quo quidem
+                    esse, et smoke omnis iusto.</p>
+            </div>
+        </div>
+        <div class="cart">
+            <img class="imog" src="{% static 'website/img/mobile_car.jpg' %}" alt="desert" width="200" height="200">
+            <h2 class="title">Ceo</h2>
+            <div class="des">
+                <p>Lorem cacarot, dolor sit amet dekiquesi adipisicing elit. Ad dignissimos doloribus quo quidem
+                    esse, et smoke omnis iusto.</p>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!-- <section class="list">
+    <h1>List Display</h1>
+    <hr>
+    <div class="display"></div> -->
+<hr><br><br><br><br>
+</section>
+</main>
+
+{% endblock %}
+
+<!-- <footer>
+        <ul>
+            <li>Crack</li>
+            <li>discord</li>
+            <li>ig</li>
+            <li>facebook</li>
+            <li>Web</li>
+        </ul>
+    </footer>
+    <script src="{% static 'website/crack.js' %}"></script> -->
+
+</body>
+
+</html>
